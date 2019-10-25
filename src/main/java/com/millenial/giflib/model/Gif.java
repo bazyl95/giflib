@@ -3,47 +3,57 @@ package com.millenial.giflib.model;
 import java.time.LocalDate;
 
 public class Gif {
-    private String mName;
-    private LocalDate mDateUploaded;
-    private String mUsername;
-    private boolean mFavorite;
+    private String name;
+    private int categoryId;
+    private LocalDate dateUploaded;
+    private String username;
+    private boolean favorite;
 
-    public Gif(String mName, LocalDate mDateUploaded, String mUsername, boolean mFavorite) {
-        this.mName = mName;
-        this.mDateUploaded = mDateUploaded;
-        this.mUsername = mUsername;
-        this.mFavorite = mFavorite;
+    public Gif(String name, int categoryId, LocalDate dateUploaded, String username, boolean favorite) {
+        this.name = name;
+        this.categoryId = categoryId;
+        this.dateUploaded = dateUploaded;
+        this.username = username;
+        this.favorite = favorite;
     }
 
-    public String getmName() {
-        return mName;
+    public String getName() {
+        return name;
     }
 
-    public void setmName(String mName) {
-        this.mName = mName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public LocalDate getmDateUploaded() {
-        return mDateUploaded;
+    public int getCategoryId() {
+        return categoryId;
     }
 
-    public void setmDateUploaded(LocalDate mDateUploaded) {
-        this.mDateUploaded = mDateUploaded;
+    public void setCategoryId(int categoryId) {
+        this.categoryId = categoryId;
     }
 
-    public String getmUsername() {
-        return mUsername;
+    public LocalDate getDateUploaded() {
+        return dateUploaded;
     }
 
-    public void setmUsername(String mUsername) {
-        this.mUsername = mUsername;
+    public void setDateUploaded(LocalDate dateUploaded) {
+        this.dateUploaded = dateUploaded;
     }
 
-    public boolean ismFavorite() {
-        return mFavorite;
+    public String getUsername() {
+        return username;
     }
 
-    public void setmFavorite(boolean mFavorite) {
-        this.mFavorite = mFavorite;
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public boolean isFavorite() {
+        return favorite;
+    }
+
+    public void setFavorite(boolean favorite) {
+        this.favorite = favorite;
     }
 }
